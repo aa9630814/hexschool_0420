@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - 小節練習</title>
+    <style>
+        .header_href{
+            color: rgb(255,0,0);
+        }
+        .header_href:hover{
+            color: rgb(0, 0, 255);
+        }
+        .content>h3{
+            font-size: 24px;
+            border-left: 5px solid rgb(255,0,0);
+            border-bottom: 5px solid rgb(255,0,0);
+        }
+        .content .del{
+            text-decoration: line-through;
+        }
+        .content3>img{
+            width: 200px;
+            border: 5px solid rgb(128,128,128);
+        }
+        .content3>img:hover{
+            border: 5px solid rgb(251, 201, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- https://courses.hexschool.com/courses/1713908/lectures/39463523 -->
+    <header>
+        <h1>CSS教學</h1>
+        <p>在這堂課上面，你了解如何使用CSS設定用在HTML標籤上，以及設定<a href="javascript;" class="header_href">連結顏色</a>。</p>
+    </header>
+
+    <div class="content content1">
+        <h3>這章節你認識的CSS設定文字語法</h3>
+        <ol>
+            <li>文字顏色 : color</li>
+            <li>文字大小 : font-size</li>
+            <li>文字行距 : line-height</li>
+            <li>文字字型 : font-family</li>
+            <li>其他..</li>
+        </ol>
+    </div>
+    <div class="content content2">
+        <h3>下列的emmet語法，哪一項是錯的?</h3>
+        <ul>
+            <li>! = HTML5環境</li>
+            <li>link:src = 匯入CSS</li>
+            <li>p*4 = 顯示4個p段落</li>
+            <li>h1 = 展開h1的開頭與結尾html標籤</li>
+            <li class="del">lorm = 自動幫我們寫完網頁</li>
+        </ul>
+    </div>
+    <div class="content content3">
+        <h3>在圖片上加上logo的線條</h3>
+        <img src="https://benic360.com/wp-content/uploads/2021/06/hex-logo.png" alt="hexschool">
+    </div>
+
+</body>
+</html>
