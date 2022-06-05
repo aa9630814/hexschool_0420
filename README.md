@@ -4,4 +4,4 @@
 > [點我前往](https://aa9630814.github.io/hexschool_0420/0503/index.html)
 
 2. 切版任務二 - chatTalker AI 機器人
-> [點我前往](https://aa9630814.github.io/hexschool_0420/0520/index.html)
+> [點我前往](https://aa9630814.github.io/hexschool_0420/0521/index.html)
