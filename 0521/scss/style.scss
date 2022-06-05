@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    h1,h2,h3,h4,h5,h6,span,p,article,section{
+        font-family: 'Signika', sans-serif;
+    }
+}
+
+button{
+    cursor: pointer;
+    transition: filter .3s;
+    border: none;
+    color: rgb(255,255,255);
+    font-size: 18px;
+    border-radius: 40px;
+    padding: 10px 30px;
+    &:hover{
+        filter: brightness(120%);
+    }
+}
+
+.top_btn>button{
+    border-radius: 50%;
+    padding: 26px 17px;
+    text-align: center;
+    background-color: #56C4C5;
+    position: fixed;
+    right: 0px;
+    bottom: 80px;
+    transform: translateX(80px);
+    transition: transform .5s;
+    z-index: 65535;
+}
+
+.ai_bg.pc{
+    &::after{
+        content: url(../images/home.svg);
+        width: 500px;
+        position: absolute;
+        z-index: 1;
+        right: 100px;
+        top: 100px;
+    }
+    &::before{
+        content: url(../images/bg_home.svg);
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+    }
+    margin-bottom: 200px;
+}
+
+.ai_bg>nav{
+    max-width: 1200px;
+    padding-top: 24px;
+    margin: auto;
+    display: flex;
+}
+nav>.cost{
+    margin-left: auto;
+    margin-right: 50px;
+    >button{
+        background-color: #FF5D50;
+    }
+}
+.logo{
+    width: 220px;
+}
+.explanation{
+    max-width: 1200px;
+    margin: 210px auto 0;
+    >h2{
+        font-size: 18px;
+        color: #56C4C5;
+        font-weight: 900;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+    h4{
+        font-size: 20px;
+    }
+
+}
+
+
+.round.pc{
+    &::before{
+        content: url(../images/ball01.svg);
+        position: relative;
+        left: -210px;
+        z-index: -1;
+    }
+}
+
+
+.community{
+    max-width: 960px;
+    margin: 0 auto 100px;
+    >h2{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        article{
+            width: 250px;
+            text-align: center;
+            >h2{
+                width: 80px;
+                margin: auto;
+            }
+            >h3{
+                margin: 15px 0;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 1.8;
+            }
+        }
+        article+article{
+            margin-left: 40px;
+        }
+    }
+}
+
+.more{
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    &::before{
+        content: url(../images/ball02.svg);
+        position: absolute;
+        z-index: -1;
+        bottom: -200px;
+        right: 200px;
+    }
+    >h2{
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 30px
+    }
+    >h4{
+        font-size: 20px;
+        margin-bottom: 60px;
+        font-weight: 900;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    li{
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 1px 10px rgb(221, 221, 221);
+        background-color: rgb(255,255,255);
+        >div:nth-of-type(1){
+            width: 260px;
+        }
+        >.text{
+            padding: 20px 0;
+        }
+        h4{
+            color: #56C4C5;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+    li+li{
+        margin-left: 15px;
+    }
+}
+
+
+
+.shop_advertise{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    article{
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        li{
+            box-shadow: 0 3px 6px rgb(221, 221, 221);
+            width: 230px;
+            padding: 45px 35px; 
+            margin-bottom: 28px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            >div:nth-of-type(1){
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                box-shadow: 0 1px 8px rgb(221, 221, 221);
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+            }
+            h4{
+                font-size: 18px;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 1.3
+            }
+        }
+        li:nth-of-type(even){
+            margin-left: 40px;
+        }
+    }
+    >.publicity{
+        width: 50%;
+        margin-left: 20px;
+        h2{
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        p{
+            line-height: 1.5;
+        }
+        >button{
+            margin-top: 20px;
+            background-color: #56C4C5;
+        }
+    }
+}
+
+.evaluation{
+    max-width: 1200px;
+    margin: 100px auto;
+    position: relative;
+    >h2{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 80px;
+        font-weight: 900;
+    }
+    >ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        &::before{
+            content: url(../images/ball03.svg);
+            position: absolute;
+            left: -80px;
+            top: -110px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        li{
+            width: 370px;
+            position: relative;
+            padding: 50px 40px 30px;
+            box-shadow: 0px 2px 10px rgb(206,206,206);
+            background-color: rgb(255,255,255);
+            border-radius: 15px;
+            box-sizing: border-box;
+            .text{
+                line-height: 1.3;
+                padding-bottom: 20px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid rgb(222, 222, 222);
+                font-size: 16px;
+            }
+            h5{
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+            .news{
+                display: flex;
+                justify-content: space-between;
+            }
+    
+        }
+        li+li{
+            margin-left: 16px;
+        }
+        .mugshot{
+            position: absolute;
+            left: 35px;
+            top: -50px;
+            width: 80px;
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+    .skill_div{
+        position:relative;
+        display:inline-block;
+        font-size: 20px;
+        color:rgb(206,206,206);
+        text-shadow: 0px 0px 2px gray;
+    }
+    .skill_top{
+        width:100%;
+        position:absolute;
+        color:rgb(255, 255, 0);
+        overflow: hidden;
+        left: 0;
+        top:0;
+    }
+}
+
+footer{
+    background: url(../images/footer.png) center center;
+    padding-top: 300px;
+    h3{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    >div{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        margin-bottom: 100px;
+        background-color: #56C4C5;
+    }
+    >p{
+        text-align: center;
+        padding: 20px 0;
+        background-color: #F5F5F5;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .ai_bg.pc{
+        &::after{
+            content: url(../images/home.svg);
+            position: absolute;
+            width: 400px;
+            z-index: -1;
+            top: 300px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+        }
+        &::before{
+            
+            content: url(../images/bg_home_sm.svg);
+            width: 300px;
+            position: absolute;
+            z-index: -1;
+            top: 500px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+        }
+        >nav{
+            justify-content: space-around;
+            border-bottom: 2px solid #FFD153;
+            padding-bottom: 20px;
+            >.cost{
+                margin: 0;
+                button{
+                    font-size: 16px;
+                    padding: 8px 24px;
+                }
+            }
+        }
+    }
+    .explanation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        >h2{
+            // 活該不切多一點結構.. 只好用醜方法實現效果
+            margin: 20px 0 10px -180px;
+        }
+    }
+
+    .round.pc{
+        &::before{
+            // 這個是我自己手動用AI切的 如果真的要用css控制大小建議還是要真實切一個區域出來給他
+            content: url(../images/ball01-sm.svg);
+            top: 350px;
+            left: -100px;
+        }
+    }
+
+
+    .community{
+        margin-top: 200px;
+        section{
+            flex-direction: column;
+            align-items: center;
+            article{
+                margin-bottom: 30px;
+            }
+            article+article{
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .more{
+
+        &::before{
+            content: url(../images/ball02-sm.svg);
+            position: absolute;
+            z-index: -1;
+            bottom: -20px;
+            right: 0px;
+        }
+        >h4{
+            padding: 0 30px;
+            line-height: 1.5;
+        }
+        ul{
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            max-width: 260px;
+            margin-bottom: 30px;
+        }
+        li+li{
+            margin-left: 0px;
+        }
+    }
+    
+    
+
+
+
+
+    .shop_advertise{
+        flex-direction: column;
+        justify-content: center;
+        article{
+            max-width: 700px;
+            margin-left: 0px;
+        }
+        ul{
+            justify-content: space-around;
+            li{
+                width: 250px;
+                margin-bottom: 30px;
+            }
+            li:nth-of-type(even){
+                margin-left: 0px;
+            }
+            li:nth-of-type(3){
+                order: 1;
+            }
+            li:nth-of-type(2){
+                order: 2;
+            }
+            li:nth-of-type(4){
+                order: 3;
+            }
+        }
+        >.publicity{
+            order: -1;
+            text-align: center;
+            margin-left: 0px;
+            margin-bottom: 50px;
+            h2{
+                font-size: 28px;
+            }
+        }
+    }
+    .evaluation{
+        >ul{
+            display: block;
+            width: 370px;
+            margin: 0 auto 250px;
+            position: relative;
+            li{
+                opacity: 0;
+                position: absolute;
+                margin-bottom: 80px;
+                transition: all .5s;
+            }
+            li+li{
+                margin-left: 0px;
+            }
+        }
+        .menu{
+            margin-top: 350px;
+            display: flex;
+            justify-content: center;
+            >div{
+                background-color: #a7a7a7;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
