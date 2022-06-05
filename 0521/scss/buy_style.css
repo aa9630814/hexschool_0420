@@ -58,6 +58,7 @@
   font-size: 32px;
   margin-bottom: 60px;
   line-height: 1.5;
+  padding: 0 20px;
 }
 
 .illustrate > .illustrate_btn {
@@ -274,7 +275,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .ai_bg.mob {
-    width: 100vw !important;
+    max-width: 100vw;
     margin-bottom: 200px;
   }
   .ai_bg.mob::after {
@@ -306,6 +307,9 @@ footer {
             align-items: flex-start;
     margin-left: 30px;
   }
+  .illustrate {
+    overflow: hidden;
+  }
   .illustrate > .illustrate_btn {
     width: 90%;
     overflow: hidden;
@@ -334,7 +338,7 @@ footer {
     margin-left: 30px;
   }
   .illustrate > .illustrate_btn > button:first-of-type {
-    margin-left: 180px;
+    margin-left: 200px;
   }
   .buy_panel {
     -webkit-box-orient: vertical;

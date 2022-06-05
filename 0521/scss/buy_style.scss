@@ -56,6 +56,7 @@
         font-size: 32px;
         margin-bottom: 60px;
         line-height: 1.5;
+        padding: 0 20px;
     }
     >.illustrate_btn{
         display: flex;
@@ -230,7 +231,7 @@ footer{
 @media screen and (max-width:1200px) {
 
     .ai_bg.mob{
-        width: 100vw !important;
+         max-width: 100vw;
         &::after{
             top: 89.33px;
         }
@@ -265,6 +266,7 @@ footer{
         margin-left: 30px;
     }
     .illustrate{
+        overflow: hidden;
         >.illustrate_btn{
             width: 90%;
             overflow: hidden;
@@ -288,7 +290,7 @@ footer{
             margin-left: 30px
         }
         >.illustrate_btn>button:first-of-type{
-            margin-left: 180px;
+            margin-left: 200px;
         }
     }
 
